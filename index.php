@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto PWII</title>
     <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        /*
+        .row{
+            border:2px solid red;
+            padding:5px;
+        }
+        .row > div{
+            border:2px solid yellow;
+            padding:50px 0;
+            text-align:center
+        }
+        */
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -82,6 +95,31 @@
             <li><a class="dropdown-item" href="#">Site 3</a></li>
         </ul>
     </div>
+    
+    <h1>Sistemas de Layout</h1>
+    <div class="row">
+        <div class="col-1 offset-1">
+            <button type="button" class="btn btn-primary">Cadastrar</button>
+        </div>
+        <div class="col-8">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            </form>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-outline-success">Procurar</button>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="alert alert-success" role="alert">
     A simple success alert—check it out!
     </div>
