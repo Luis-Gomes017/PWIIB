@@ -132,9 +132,25 @@
     O conectivo "OU" testa todas as condições e executa o código se apenas uma
     das condições for verdadeira. Caso nenhuma condição for verdadeira o else é executado.
     <pre>
-      
+      $telefone = "14998885214";
+      if($telefone == "14998885214" || $telefone == "1688885555"){
+        echo "Aqui um dos telefone é igual a variavel";
+      }
     </pre>
+    Quando temos várias condições apenas uma é necessario ao usar o conectivo OU
+    representado por dois PIPE (Tecla que fica do lado do Z) ||
   </p>
+  <h2>Exercicio</h2>
+    <p>
+      Crie uma variavel idade preencha com um valor e
+      escreva na tela se ela pode ou não entrar em um evento
+      considerando as seguintes regras:
+      <ul>
+        <li>Menor de 18 anos: Não pode entrar.</li>
+        <li>Maior ou igual a 18 e menor que 60: Pode entrar.</li>
+        <li>Maior ou igual a 60: Entrada gratuita.</li>
+      <ul>
+    </p>
 </div>
 
 
