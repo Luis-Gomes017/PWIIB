@@ -72,6 +72,13 @@
       $i++;
     }while($i < 10)
   </pre>
+  <?php
+    $i = 0;
+    do{
+      echo "DO WHILE com indice $i <br>";
+      $i = $i + 1;
+    }while($i < 10)
+?>
 </p>
 </div>
 
