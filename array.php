@@ -10,7 +10,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.php">
       <img src="/pwiib/imagens/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> Projeto PWII Turma B
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,36 +73,48 @@
     $n = [rand(31, 45), rand(31, 45), rand(31, 45), rand(31, 45), rand(31, 45)];
     $g = [rand(46, 60), rand(46, 60), rand(46, 60), rand(46, 60), rand(46, 60)];
     $o = [rand(61, 75), rand(61, 75), rand(61, 75), rand(61, 75), rand(61, 75)];
-    ?>
+  ?>
 
-    <style>
-      table, tr, td{
-        border: 1px solid;
-        font-size:20px;
-        padding:10px;
+  <style>
+    table, tr, td{
+      border: 1px solid;
+      font-size:20px;
+      padding:10px;
+    }
+  </style>
+  <br><br>
+  <table>
+    <tr>
+      <td>B</td>
+      <td>I</td>
+      <td>N</td>
+      <td>G</td>
+      <td>O</td>
+    </tr>
+    <?php
+      for($ifor=0; $ifor < 5; $ifor++){
+        echo "<tr>";
+        echo "<td>$b[$ifor]</td>";  
+        echo "<td>$i[$ifor]</td>";
+        echo "<td>$n[$ifor]</td>";
+        echo "<td>$g[$ifor]</td>";
+        echo "<td>$o[$ifor]</td>";
+        echo "</tr>";
       }
-    </style>
-    <br><br>
-    <table>
-      <tr>
-        <td>B</td>
-        <td>I</td>
-        <td>N</td>
-        <td>G</td>
-        <td>O</td>
-      </tr>
-      <?php
-        for($ifor=0; $ifor < 5; $ifor++){
-          echo "<tr>";
-          echo "<td>$b[$ifor]</td>";  
-          echo "<td>$i[$ifor]</td>";
-          echo "<td>$n[$ifor]</td>";
-          echo "<td>$g[$ifor]</td>";
-          echo "<td>$o[$ifor]</td>";
-          echo "</tr>";
-        }
-      ?>
-    </table>
+    ?>
+  </table>
+
+  <?php
+    $Sorteio = array(12, 7, 3, 9, 5, 2, 4, 1, 11, 8, 13, 6, 14, 15, 10);
+
+    for ($i=0; $i < 15; $i++){ 
+      echo "<h5>Rodada ". ($i+1)." numero sorteado é: $Sorteio[$i]</h5>";
+    }
+  ?>
+  
+  ..
+  .
+  .
 </p>
 </div>
 
