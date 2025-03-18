@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto PWII</title>
+    <title>Formulario</title>
     <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -36,28 +36,41 @@
     </div>
   </div>
 </nav>
-<div class="container">
-<h1>For</h1>
 
-<p>
-  For é uma estrutura de repetição. Existem 3 configurações para a estrutura de repetição funcionar:
-  <ol>
-    <li>Variavel de controle</li>
-    <li>Condição de finalização</li>
-    <li>Incremento da variavel de controle</li>
-  </ol>
-  <pre>
-    for($i = 0; $i < 10; $i++){
-      echo "indice $i";
-    }
-  </pre>
-  <?php
-    for($i = 0; $i < 10; $i++){
-      echo "indice $i <br/>";
-    }
-  ?>
-</p>
-</div>
+<h1>Cadastro de Usuário</h1>
+<form action="salvar_dados.php" method="get">
+    <label>Nome</label>
+    <input type="text" name="nome">
+    <br>
+    <label>Idade</label>
+    <input type="number" name="idade">
+    <br>
+    <button type="submit">
+        Logar
+    </button>
+</form>
+<br><br>
+<form action="salvar_dados.php" method="get">
+    <label>Numero 1</label>
+    <input type="number" name="numero1">
+    <br>
+    <label>Numero 2</label>
+    <input type="number" name="numero2">
+    <br>
+    <button type="submit">
+        Logar
+    </button>
+</form>
+<br><br>
+<form action="salvar_dados.php" method="get">
+    <label>Nome</label>
+    <input type="text" name="nome2">
+    <br>
+    <button type="submit">
+        Logar
+    </button>
+</form>
+</form>
 
 <script src="bootstrap.bundle.min.js"></script>
 </body>
