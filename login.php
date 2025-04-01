@@ -1,0 +1,13 @@
+<form action="verificar_login.php" method="post">
+    <br> Email:
+    <input type="text" class="form-control" name="email">
+    <br> Senha:
+    <input type="text" class="form-control" name="senha">
+    <?php if(isset($_GET["erro"]) && !empty($_GET["erro"])){
+        echo $_GET["erro"];
+    }?>
+    <br><br>
+    <button type="submit">
+        Logar
+    </button>
+</form>
