@@ -1,19 +1,18 @@
 <?php
+
 include "conexao.php";
 require_once "UsuarioRepository.php";
 $repo = new UsuarioRepository($conexao);
 
 
-if( isset($_GET["id"]) && !empty($_GET["id"]))
+if( isset($_POST["ID"]) && isset($_POST['LOGIN']))
 {
-    $usuario = $repo->buscarPorID($_GET["id"]);
-    if ($usuario != null) {
-        $repo->excluirUsuario($_GET["id"]);
-    }
+    $repo->Editar($_POST['LOGIN'],$_POST['ID'],$_POST['ATIVO']);
     header('location: usuarios.php');
 }
 else
 {
     header('location: usuarios.php');
+
 }
 ?>

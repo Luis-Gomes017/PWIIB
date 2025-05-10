@@ -57,8 +57,8 @@
                                     <td>".$user['LOGIN']."</td>
                                     <td class='text-center'>".$user['ATIVO']."</td>
                                     <td class='text-end'>
-                                        <a class= 'btn btn-danger' href='excluir_usuario.php?ID=".$user['ID']."'>Excluir</a>
-                                        <a class= 'btn btn-warning' href='editar_usuario.php?ID=".$user['ID']."'>Editar</a>
+                                        <a class= 'btn btn-danger' href='excluir_usuario.php?id=".$user['ID']."'>Excluir</a>
+                                        <a class= 'btn btn-warning' href='editar_usuario.php?id=".$user['ID']."'>Editar</a>
                                     </td>
                                 </tr>";
                             }
