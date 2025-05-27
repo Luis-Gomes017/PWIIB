@@ -1,34 +1,35 @@
 <?php include "cabecalho.php"; ?>
 
-<style>
-  .margem{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-  }
-  </style>
-<div class="container text-bg-primary p-4 margem col-md-5">
-  <div class="text-center">
-    <img src=".\imagens\logo_defesa_civil.png" class="rounded img-thumbnail" alt="logo_defesa_civil.png" width="480" height="310">
-  </div>
-<form action="verificar_login.php" method="post">
-  <div class="mb-3 margem">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu Email" name="email">
-  </div>
-  <div class="mb-3 margem">
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua Senha" name="senha">
-    <?php if(isset($_GET["erro"]) && !empty($_GET["erro"])){
-       echo "<div class='alert alert-danger p-2 mt-3' role='alert'>";
-       echo $_GET["erro"];
-       echo "</div>";
-       
-
-    }?>
-  </div>
-  <div class="d-grid gap-2 margem">
-    <button type="submit" class="btn btn-warning">Entrar</button>
-  </div>
-</form>
+<div class="container">
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card mt-3 ">
+            <form class="card-body cardbody-color rounded-3 p-lg-5" method="post" action="verificar_login.php">
+                <div class="text-center">
+                    <img src="/pwiib/imagens/login.png" class="img-fluid my-4 bg-white p-3 rounded-3" alt="profile">
+                </div>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-control" name="Login" id="Login" required aria-describedby="Login" placeholder="Digite seu login">
+                </div>
+                <div class="mb-3 mt-3">
+                    <input type="password" class="form-control" id="Senha" name="Senha" required placeholder="Digite sua senha">
+                </div>
+                <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100" style="background-color:#F7A81B">Entrar</button></div>
+                <input type="hidden" name="ReturnUrl" value="/" />
+                <div id="mensagem" class="form-text text-center text-dark">
+                    <?php
+                        if(isset($_GET["erro"]) && !empty($_GET["erro"]))
+                        {
+                            echo "<div class='alert alert-danger'>";
+                            echo $_GET["erro"];
+                            echo "</div>";
+                        }
+                    ?>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </div>
 
 <?php include "rodape.php"; ?>

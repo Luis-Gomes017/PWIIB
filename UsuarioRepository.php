@@ -37,6 +37,17 @@ class UsuarioRepository {
         $resultado = $stmt->get_result();
         return $resultado->fetch_assoc();
     }
+
+    public function verificarLogin($login, $senha) {
+        $stmt = $this->conexao->prepare(
+            "SELECT * FROM usuarios WHERE Login = ? && Senha = ?");
+        $stmt->bind_param("ss", $login, $senha);
+        $stmt->execute();
+
+        $resultado = $stmt->get_result();
+        return $resultado->fetch_assoc();
+    }
+
     public function Inserir($login, $senha, $ativo)
     {
         echo $ativo;
@@ -47,6 +58,7 @@ class UsuarioRepository {
                 $stmt->bind_param("ssi", $login,$senha,$ativo);
                 $stmt->execute();
     }
+
     public function excluirUsuario($id)
     {
         $sql = "DELETE FROM usuarios WHERE id = ?";
@@ -54,6 +66,7 @@ class UsuarioRepository {
         $preparar->bind_param("i",$id);
         $preparar->execute();
     }
+
     public function Editar($login, $id, $ativo)
     {
         $sql = "UPDATE usuarios SET LOGIN=?, ATIVO=? WHERE ID=?";

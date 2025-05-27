@@ -1,3 +1,4 @@
+<?php include "logado.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desenvolvimento de Sistemas</title>
   <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="estilo.css" rel="stylesheet" />
+    <style>
+          .btn-color {
+              background-color: #0e1c36;
+              color: #fff;
+          }
+          .profile-image-pic {
+              height: 200px;
+              width: 200px;
+              object-fit: cover;
+          }
+          body {
+              background-color: #F0F0F0;
+          }
+          .cardbody-color {
+              /*background-color: #ebf2fa;*/
+              background-color: #17458F;
+          }
+          a {
+              text-decoration: none;
+          }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -45,6 +68,17 @@
             </a>
         </li>
       </ul>
+      <?php
+      if (basename($_SERVER['PHP_SELF']) != 'login.php') {
+      ?>
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item text-white">
+              Bem vindo <?php echo $_SESSION["Nome"]; ?> <a href="logoff.php"> Faça o logoff aqui </a>
+          </li>
+        </ul>
+      <?php
+      }
+      ?>
     </div>
   </div>
 </nav>
