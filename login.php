@@ -1,21 +1,10 @@
 <?php include "cabecalho.php"; ?>
 
 <div class="container">
-<<<<<<< HEAD
 <div class="row">
     <div class="col-md-6 offset-md-3">
         <div class="card mt-3 ">
             <form class="card-body cardbody-color rounded-3 p-lg-5" method="post" action="verificar_login.php">
-=======
-
-<div class="row">
-    <div class="col-md-6 offset-md-3">
-
-        <div class="card mt-3 ">
-
-            <form class="card-body cardbody-color rounded-3 p-lg-5" method="post" action="verificar_login.php">
-
->>>>>>> prof/master
                 <div class="text-center">
                     <img src="/pwiib/imagens/login.png" class="img-fluid my-4 bg-white p-3 rounded-3" alt="profile">
                 </div>
@@ -27,11 +16,7 @@
                 </div>
                 <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100" style="background-color:#F7A81B">Entrar</button></div>
                 <input type="hidden" name="ReturnUrl" value="/" />
-<<<<<<< HEAD
                 <div id="mensagem" class="form-text text-center text-dark">
-=======
-                <div id="mensagem" class="form-text text-center mb-5 text-dark">
->>>>>>> prof/master
                     <?php
                         if(isset($_GET["erro"]) && !empty($_GET["erro"]))
                         {
@@ -43,10 +28,6 @@
                 </div>
             </form>
         </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> prof/master
     </div>
 </div>
 </div>

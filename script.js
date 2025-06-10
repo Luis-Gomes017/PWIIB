@@ -1,9 +1,5 @@
 const botoes = document.querySelectorAll('.clique');
 
-<<<<<<< HEAD
-=======
-
->>>>>>> prof/master
 botoes.forEach(button => {
     button.addEventListener('click', function(e) {
         console.log(e.target)

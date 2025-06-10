@@ -3,7 +3,6 @@
 include "conexao.php";
 
 $sql = "CREATE TABLE IF NOT EXISTS USUARIOS (
-<<<<<<< HEAD
     ID INT PRIMARY KEY AUTO_INCREMENT,
     LOGIN VARCHAR(50) NOT NULL,
     SENHA VARCHAR(80) NOT NULL,
@@ -44,49 +43,6 @@ $conexao->query($sql); $sql=
     CONSTRAINT FK_PERGUNTA FOREIGN KEY (ID_PERGUNTA) REFERENCES PERGUNTAS(ID),
     CONSTRAINT FK_REF FOREIGN KEY (ID_REF) REFERENCES REFERENCIAS(ID)
 );";
-=======
-            ID INT PRIMARY KEY AUTO_INCREMENT,
-            LOGIN VARCHAR(50) NOT NULL,
-            SENHA VARCHAR(80) NOT NULL,
-            ATIVO BIT DEFAULT 1
-        );";
-$conexao->query($sql); $sql=
-        "CREATE TABLE IF NOT EXISTS REFERENCIAS (
-            ID INT PRIMARY KEY AUTO_INCREMENT,
-            NOME VARCHAR(100) NOT NULL
-        );"
-;$conexao->query($sql); $sql=
-        "CREATE TABLE IF NOT EXISTS DISCIPLINAS(
-            ID INT PRIMARY KEY AUTO_INCREMENT,
-            DISCIPLINA VARCHAR(100)        
-        );"
-;$conexao->query($sql); $sql=
-        "CREATE TABLE IF NOT EXISTS PERGUNTAS(
-            ID INT PRIMARY KEY AUTO_INCREMENT,
-            PERGUNTA TEXT NOT NULL,
-            ID_DISCIPLINA INT,
-            CONSTRAINT FK_DISCIPLINA FOREIGN KEY (ID_DISCIPLINA) 
-                REFERENCES DISCIPLINAS(ID)
-        );"
-;$conexao->query($sql); $sql=
-        "CREATE TABLE IF NOT EXISTS ALTERNATIVAS(
-            ID INT PRIMARY KEY AUTO_INCREMENT,
-            ID_PERGUNTA INT,
-            CORRETA BIT,
-            ALTERNATIVA TEXT NOT NULL,
-            CONSTRAINT FK_PERGUNTAS FOREIGN KEY(ID_PERGUNTA)
-                REFERENCES PERGUNTAS(ID)
-        );"
-;$conexao->query($sql); $sql=
-        "CREATE TABLE IF NOT EXISTS REF_PERGUNTAS(
-            ID INT PRIMARY KEY AUTO_INCREMENT,
-            ID_PERGUNTA INT,
-            ID_REF INT,
-            CONSTRAINT FK_PERGUNTA FOREIGN KEY (ID_PERGUNTA) REFERENCES PERGUNTAS(ID),
-            CONSTRAINT FK_REF FOREIGN KEY (ID_REF) REFERENCES REFERENCIAS(ID)
-        );";
-
->>>>>>> prof/master
 
 if ($conexao->query($sql)) {
     echo "Tabela criada com sucesso.<br>";

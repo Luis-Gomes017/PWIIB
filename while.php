@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<?php include "cabecalho.php"; ?>
 
 <div class="container">
 <h1>While</h1>
@@ -8,31 +6,7 @@
   While é uma estrutura de repetição. Existem 3 configurações para a estrutura de repetição funcionar:
   <ol>
     <li>Variavel de controle</li>
-=======
-<?php 
-
-include "cabecalho.php"; ?>
-
-<h1>While</h1>
-<p>
-  While é uma estrutura de repetição. Existem 3 configurações para 
-  a estrutura de repetição funcionar:
-  <ol>
-    <li>Variável de controle</li>
->>>>>>> prof/master
     <li>Condição de finalização</li>
-    <li>Incremento da variavel de controle</li>
-  </ol>
-  <pre>
-<<<<<<< HEAD
-    $i = 0;
-    while($i < 10){
-      echo "indice $i";
-      $i++;
-    }
-  </pre>
-  <?php
-    $i = 0;
     while($i < 10){
       echo "while com indice $i <br>";
       $i++;
@@ -62,7 +36,6 @@ include "cabecalho.php"; ?>
 </div>
 
 <?php include "rodape.php"; ?>
-=======
       $i = 0;
       while($i < 10)
       {
@@ -101,8 +74,4 @@ $i = 0;
       }while($i < 10)
 ?>
   </p>
-
-
-
   <?php include "rodape.php"; ?>
->>>>>>> prof/master
