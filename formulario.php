@@ -1,5 +1,6 @@
 <?php include "cabecalho.php"; ?>
 
+<<<<<<< HEAD
 <div class="container">
 <h1>Cadastro de Usuário</h1>
 <br>
@@ -89,5 +90,22 @@
     </button>
 </form>
 </div>
+=======
+
+<h1>Cadastro de Usuário</h1>
+
+<form action="salvar_dados.php" method="post">
+    <label>Email</label>
+    <input type="email" name="login" value="" />
+    <br />
+    <label>Senha</label>
+    <input type="password" name="senha" value="" />
+    <br />
+    <button type="submit">
+        Logar
+    </button>
+</form>
+
+>>>>>>> prof/master
 
 <?php include "rodape.php"; ?>

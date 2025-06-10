@@ -1,5 +1,10 @@
 #Vertical{
+<<<<<<< HEAD
     width: 19%;
+=======
+    /* border:5px double #FF0000; */
+    width: 20%;
+>>>>>>> prof/master
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,14 +13,25 @@
 }
 
 #Numeros{
+<<<<<<< HEAD
+=======
+    /* border:5px double #FF0FFF;
+    background-color: brown; */
+>>>>>>> prof/master
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
+<<<<<<< HEAD
 
 #Numeros > div {
     height: 20%;
+=======
+#Numeros > div {
+    height: 20%;
+    /* background-color: blueviolet; */
+>>>>>>> prof/master
     width: 100%;
     border:1px solid ;
 }
@@ -32,7 +48,10 @@ html, body {
     display: flex;
     justify-content: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> prof/master
 .letras > div {
     width: 6.25%;
     border:1px solid;

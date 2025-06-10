@@ -1,7 +1,11 @@
 <?php
 
 include "conexao.php";
+<<<<<<< HEAD
 require_once "UsuarioRepository.php";
+=======
+require_once "repository/UsuarioRepository.php";
+>>>>>>> prof/master
 $repo = new UsuarioRepository($conexao);
 
 
@@ -16,4 +20,8 @@ else
     header('location: usuarios.php');
 
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> prof/master
 ?>

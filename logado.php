@@ -1,5 +1,9 @@
 <?php session_start();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> prof/master
 if (basename($_SERVER['PHP_SELF']) != 'login.php') 
 {
     if (!isset($_SESSION["Nome"]) || empty($_SESSION["Nome"]))
@@ -7,4 +11,10 @@ if (basename($_SERVER['PHP_SELF']) != 'login.php')
         header("location: login.php");
     }
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> prof/master
 ?>
